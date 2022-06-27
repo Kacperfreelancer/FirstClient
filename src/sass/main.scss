@@ -21,14 +21,17 @@ body {
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em;
   position: fixed;
-  height: 10vh;
   width: 100%;
   background-color: $grey;
+  z-index: 1;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+  }
 
   &__logo {
     font-size: 2rem;
@@ -38,8 +41,75 @@ body {
     position: relative;
     padding: 1em;
 
-    &--bar {
+    &-bar {
       @include bar;
+      transition: transform 0.3s, opacity 0.3s;
+
+      &.top.active {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &.mid.active {
+        transform: translateX(-30px);
+        opacity: 0;
+      }
+
+      &.bot.active {
+        transform: rotate(-45deg) translate(6px, -7px);
+      }
+    }
+  }
+}
+
+.menu-mobile {
+  position: fixed;
+  width: 100%;
+  top: -200px;
+  left: 0;
+  padding: 2em 4em;
+  transition: top 1s;
+  background-color: $grey;
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      position: relative;
+      margin-bottom: 1.5em;
+
+      &::before {
+        position: absolute;
+        left: -1em;
+        content: "";
+        height: 100%;
+        width: 3px;
+        background-color: $dark;
+      }
+
+      & a {
+        text-decoration: none;
+        color: $dark;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &.active {
+    top: 7em;
+  }
+}
+
+// ================================
+//          MEDIA
+// ================================
+
+@media (min-width: 576px) {
+  .navbar {
+    padding: 0.8em 2.5em;
+
+    &__logo {
+      font-size: 3.5rem;
     }
   }
 }
