@@ -18,6 +18,7 @@ const navItemAnimation = () => {
   elementsMenu.forEach(item => {
     item.classList.toggle("active");
     item.style.animationDelay = `.${delayTime}s`;
+    item.addEventListener("click", handleBurgerIcon);
     delayTime += 2;
   });
 };
