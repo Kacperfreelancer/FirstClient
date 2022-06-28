@@ -20,7 +20,7 @@ const paths = {
   js: "./src/js/**/*.js",
   jsDest: "./dist/js",
   imgs: "./src/img/*",
-  imgsDest: "dist/images",
+  imgsDest: "dist/img",
   html: "./*.html",
 };
 
