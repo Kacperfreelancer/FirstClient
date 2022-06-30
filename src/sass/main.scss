@@ -175,6 +175,51 @@ body {
   }
 }
 
+// =======================
+//    O NAS
+
+.about {
+  &__box {
+    padding: 1em;
+    &__img {
+      margin-bottom: 2em;
+      & img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      &__title {
+        margin-bottom: 1em;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.49) 0%,
+      rgba(0, 0, 0, 0.49) 100%
+    ),
+    url("../img/hero-section-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2em;
+
+  &__text {
+    padding: 1em 3em;
+    border: 1px solid $pure-white;
+    color: $pure-white;
+  }
+}
+
 // ================================
 //          MEDIA
 // ================================

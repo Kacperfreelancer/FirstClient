@@ -3,3 +3,12 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.section__title {
+  margin: 2em 0;
+  font-size: 4rem;
+  font-weight: 300;
+  color: $dark;
+  text-transform: uppercase;
+  text-align: center;
+}
