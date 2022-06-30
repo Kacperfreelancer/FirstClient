@@ -19,7 +19,7 @@ const navItemAnimation = () => {
     item.classList.toggle("active");
     item.style.animationDelay = `.${delayTime}s`;
     item.addEventListener("click", handleBurgerIcon);
-    delayTime += 2;
+    delayTime++;
   });
 };
 
