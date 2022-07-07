@@ -236,8 +236,9 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      margin-top: 2em;
+      margin: 2em auto;
       align-items: center;
+      max-width: 500px;
       min-height: 500px;
       padding: 2em;
       border-radius: 12px;
@@ -385,6 +386,19 @@ body {
       font-size: 3rem;
     }
   }
+
+  .ofert {
+    & .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+
+      & .card {
+        width: 45%;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -416,6 +430,15 @@ body {
     &__copy {
       width: 100%;
       text-align: center;
+    }
+  }
+
+  .ofert {
+    & .cards {
+      gap: 2em;
+      & .card {
+        width: 30%;
+      }
     }
   }
 }
