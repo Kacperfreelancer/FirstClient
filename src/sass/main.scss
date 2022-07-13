@@ -424,6 +424,22 @@ body {
   .menu-desktop {
     display: block;
   }
+  .about {
+    &__box {
+      display: flex;
+      &__img {
+        width: 50%;
+      }
+      &__text {
+        padding: 2em;
+        width: 50%;
+        &__title {
+          margin-bottom: 1em;
+          font-size: 2.8rem;
+        }
+      }
+    }
+  }
   .footer {
     display: flex;
     flex-direction: row;
