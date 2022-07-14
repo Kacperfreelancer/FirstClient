@@ -1,0 +1,21 @@
+@import "../_colors";
+@import "../_components";
+@import "../_mixins";
+
+.map {
+  padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .section__title {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
