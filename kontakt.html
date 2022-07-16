@@ -48,26 +48,37 @@
     </ul>
   </div>
 
-  <div class="map">
+  <div class="form">
     <h2 class="section__title">Kontakt</h2>
+    <div class="wrapper">
+      <div class="form-box">
+        <div class="form-box__input">
+          <input type="text" required class="form-box__input-item">
+          <label>Imię</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-box__input">
+          <input type="mail" required class="form-box__input-item">
+          <label>Email</label>
+          <div class="underline"></div>
+        </div>
+        <div class="form-box__input">
+          <textarea required class="form-box__input-item form-box__input-item--textarea"> </textarea>
+          <label>Wiadomość</label>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <h2 class="section__title">Nasza Lokalizacja</h2>
     <iframe class="map__box"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.913608141334!2d18.720172816346988!3d51.588146712616194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471af53d2dbabd7d%3A0x485089fe5de6dc7!2sMcDonald&#39;s!5e0!3m2!1spl!2spl!4v1657829905742!5m2!1spl!2spl"
       width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div class="form">
-    <div class="wrapper">
-      <form action="">
-        <label for="email">Email:</label>
-        <input type="text" id="email">
-        <label for="name">Imię:</label>
-        <input type="text" id="name">
-        <label for="message">Wiadomość</label>
-        <textarea id="message"></textarea>
-      </form>
-    </div>
-  </div>
 
   <footer class="footer">
     <div class="footer__title">

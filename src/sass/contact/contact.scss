@@ -18,4 +18,64 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+
+    &__input {
+      position: relative;
+      width: 50%;
+
+      &-item {
+        width: 100%;
+        padding: 1em 1em 0.4em 1em;
+        border: none;
+        border-bottom: 2px solid $dark;
+        font-size: 1.7rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus ~ label,
+        &:valid ~ label {
+          transform: translateY(-25px);
+          color: $black;
+        }
+
+        &:focus ~ .underline,
+        &:valid ~ .underline {
+          transform: scaleX(1);
+        }
+
+        &--textarea {
+          height: 150px;
+          resize: none;
+        }
+      }
+
+      & label {
+        position: absolute;
+        bottom: 10px;
+        left: 0.4em;
+        pointer-events: none;
+        color: $dark;
+        transition: transform 0.3s;
+      }
+
+      & .underline {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $green;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+      }
+    }
+  }
 }
