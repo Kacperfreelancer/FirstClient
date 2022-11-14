@@ -24,11 +24,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
     min-height: 300px;
 
     &__input {
       position: relative;
-      width: 50%;
+      width: 80%;
 
       &-item {
         width: 100%;
@@ -53,7 +54,7 @@
         }
 
         &--textarea {
-          height: 150px;
+          // height: 150px;
           resize: none;
         }
       }
@@ -77,5 +78,20 @@
         transition: transform 0.3s;
       }
     }
+  }
+}
+
+
+// MEDIA 
+
+@media (min-width: 576px) {
+  .form-box{
+    width: 100%;
+  }
+}
+
+@media (min-width:992px){
+  .form-box{
+    width: 80%;
   }
 }
